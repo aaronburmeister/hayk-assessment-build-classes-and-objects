@@ -1,4 +1,3 @@
-require 'pry'
 class Building
 
     attr_accessor(:name, :number_of_tenants)
@@ -34,7 +33,7 @@ class Building
     def placard
         # returns name and address of building
         placard = []
-        placard << self.name
+        placard << self.name,
         placard << self.address
     end
 
@@ -52,5 +51,4 @@ end
 
 the_hub = Building.new("The Hub", "Walnut Street", 7, 700)
 the_lab = Building.new("The Lab", "Platte Street", 5, 500)
-
-puts Building.average_tenants_per_floor
+learning_center = Building.new("Where Dreams Begin Learning Center", "N Downing Street", 3, 50)
